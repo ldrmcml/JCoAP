@@ -1,4 +1,4 @@
-package test;
+package mobilehostconcurrenttest;
 import java.io.BufferedReader; 
 import java.io.File; 
 import java.io.FileInputStream; 
@@ -34,7 +34,7 @@ public class ConcurrentTest {
 	public static void main(String[] args) throws InterruptedException { 
 		int size = keywordMap.size(); 
 		ExecutorService exec = Executors.newCachedThreadPool(); 
-		// 50个线程可以同时访问 
+		// 50个线程可以同时访�? 
 //		final Semaphore semp = new Semaphore(thread_num); 
 		// 模拟2000个客户端访问 
 		for (int index = 0; index < client_num; index++) {
@@ -58,7 +58,7 @@ public class ConcurrentTest {
 //		                    	}catch(Exception ex){
 //		                    	     
 //		                    	}finally{
-//		                    	    lock.unlock();   //释放锁
+//		                    	    lock.unlock();   //释放�?
 //		                    	}
 		                    }
 		                };
@@ -76,7 +76,7 @@ public class ConcurrentTest {
 			exec.execute(run); 
 		} 
 		//Thread.sleep(10000);
-		// 退出线程池 
+		// �?出线程池 
 		//exec.shutdown(); 
 		while(!exec.awaitTermination(1, TimeUnit.SECONDS));
 		System.out.println("============"+atomic.get());

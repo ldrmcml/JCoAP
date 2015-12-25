@@ -1,4 +1,4 @@
-package test;
+package mobilehostconcurrenttest;
 import java.io.BufferedReader; 
 import java.io.File; 
 import java.io.FileInputStream; 
@@ -35,7 +35,7 @@ public class CopyOfConcurrentTest {
 		int size = keywordMap.size(); 
 		// TODO Auto-generated method stub 
 		ExecutorService exec = Executors.newCachedThreadPool(); 
-		// 50个线程可以同时访问 
+		// 50个线程可以同时访�? 
 //		final Semaphore semp = new Semaphore(thread_num); 
 		// 模拟2000个客户端访问 
 		for (int index = 0; index < client_num; index++) {
@@ -56,7 +56,7 @@ public class CopyOfConcurrentTest {
 //		                    	}catch(Exception ex){
 //		                    	     
 //		                    	}finally{
-//		                    	    lock.unlock();   //释放锁
+//		                    	    lock.unlock();   //释放�?
 //		                    	}
 		                    }
 		                };
