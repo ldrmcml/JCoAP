@@ -70,7 +70,7 @@ public class MainWindow extends javax.swing.JFrame implements ActionListener, Tr
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        uriField.setText("coap://vs0.inf.ethz.ch:61616/.well-known/core");
+        uriField.setText("coap://192.168.191.2:5683/.well-known/core");
 
         getButton.setText("GET");
         getButton.setActionCommand("GET");
